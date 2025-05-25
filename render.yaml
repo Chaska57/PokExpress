@@ -3,7 +3,10 @@ services:
     name: django-app
     env: python
     buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn PokExpress.wsgi
+    startCommand: |
+      python manage.py migrate &&
+      python manage.py collectstatic --noinput &&
+      gunicorn PokExpress.wsgi
     envVars:
       - key: DJANGO_SECRET_KEY
         generateValue: true
