@@ -3,7 +3,7 @@ services:
     name: django-app
     env: python
     buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn PokeExpress.wsgi
+    startCommand: gunicorn PokExpress.wsgi
     envVars:
       - key: DJANGO_SECRET_KEY
         generateValue: true
