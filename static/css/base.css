@@ -1,0 +1,16 @@
+.carta{
+    width: fit-content;
+    height:fit-content;
+    padding: 4px;
+    background: #202020;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: white;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.2s ease;
+    overflow: hidden;
+    transform-style: preserve-3d;
+    border-radius: 10px;
+}
+
